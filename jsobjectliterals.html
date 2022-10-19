@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Object Literals</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// Js Object (Array as Object (JSON - API))
+		let obj1 = {
+			firstname : "Tin",
+			middlename : "Htut",
+			lastname : "Aung"
+		};
+		console.log(obj1);
+		console.table(obj1);
+
+		console.log(obj1.firstname);
+		console.log(obj1.middlename);
+		console.log(obj1.lastname);
+
+		let obj2 = {
+			firstname : "Kyaw",
+			lastname : "Gyi",
+			age : 52,
+			email : "kyawgyi52@gmail.com",
+			hobbies:["tiktok","music","sport"],
+			address:{
+				street: "Tarmwe",
+				city:"Yangon"
+			},
+			phone:"09123456" //(obj htl mr , pl shi ya ml ; ma htae ya)
+		};
+
+		console.log(obj2);
+		console.table(obj2);
+
+		console.log(obj2.firstname);
+		console.log(obj2.lastname);
+		console.log(obj2.age);
+		console.log(obj2.email);
+		console.log(obj2.hobbies[0]);
+		console.log(obj2.hobbies[2]);
+		console.log(obj2.address.street);
+		console.log(obj2.address.city);
+		console.log(obj2.phone);
+
+		// Function TBC
+
+		const todo - {
+			add:function(){
+				console.log("Add todo ...");
+			},
+			edit:function(x){
+				console.log("Have to " + x)
+			}
+		};
+		todo.add();
+		todo.edit('cook');
+
+
+		todo.delete = function(){
+			console.log('Delete all notes');
+		};
+
+		todo.delete();
+
+
+
+
+
+	</script>
+
+</body>
+</html>

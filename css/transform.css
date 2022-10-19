@@ -1,0 +1,63 @@
+:root{
+	--oc:orange;
+	--gc:#29e35a;
+	--vi:rgba(132,37,127,1.00);
+}
+.div1{
+	width: 100px;
+	height: 80px;
+	background-color: var(--vi);
+	transform: rotate(90deg);
+}
+.div2{
+	width: 200px;
+	height: 80px;
+	background-color: var(--oc);
+	transform:rotate(50deg);
+}
+.div3{
+	width: 200px;
+	height: 80px;
+	background-color: var(--gc);
+	transform:rotateX(50deg);
+}
+.div4{
+	width: 200px;
+	height: 80px;
+	background-color: var(--oc);
+	transform:rotateY(50deg);
+}
+.div5{
+	width: 200px;
+	height: 80px;
+	background-color: var(--vi);
+	transform:scale(0.5);
+}
+.country{
+	font-size: 16px;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	padding: 10px 25px 10px 10px;
+	background-image: url(https://mpng.subpng.com/20180613/fj/kisspng-holland-lop-lionhead-rabbit-leporids-domestic-rabb-5b20bfce7bf6d2.4174643415288729105078.jpg);
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-x:90%;
+}
+h1{
+	text-align: center;
+}
+p.text{
+	text-align: center;
+	color:red;
+}
+@media(max-width: 600px){
+	h1{
+		font-size: 25px;
+		color: blue;
+	}
+	p.text{
+		color:blue;
+	}
+}

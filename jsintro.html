@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		JS Intro
+	</title>
+</head>
+<style type="text/css">
+	
+</style>
+<body>
+	<h3>Welcome to JS</h3>
+	<b id="poem">welcome to js</b>
+	<img src="img/shame.jpeg" id="funny"/>
+	<br/><br/>
+	<button onclick="document.getElementById('funny').src='img/Amazing.jpeg'">Amazing</button>
+	<button onclick="document.getElementById('funny').src='img/blah.jpeg'">Blah</button>
+	<button onclick="document.getElementById('funny').src='img/shame.jpeg'">Shame</button>
+
+	<script type="text/javascript">
+		console.log("maung maung");
+		console.log("aung aung","kyaw kyaw");
+		console.log(10);
+		console.log(10+20);
+		console.log(20+"50");
+		console.log(50+true);
+		console.log("aung aung"+20);
+		console.log("aung aung "+20);
+		// window.alert("Hello Myanmar");
+		// window.alert("Save Myanmar");
+		// alert("Fight to japu");
+
+		//comments
+		//single line comment
+		/*multi line comment
+		multi line comment*/
+		
+		//Variable(const/var/let)
+		const sayar = "Tin Htut Aung";
+		// var sy ="Tin Htut Aung";
+		let s = "Tin Htut Aung";
+		console.log(s);
+
+		// backtick(``)
+		console.log(`sayar`);
+		console.log(`${sayar}`);
+		console.log("our teacher name is " + sayar);
+		console.log(`our teacher name is ${sayar}`)
+		// window.alert(sayar);
+		// window.alert(`${sayar}`);
+
+		var num1 = 1500;
+		const num2 = 1000;
+		console.log(num1+num2);
+		console.log('num1+num2');
+		console.log(`${num1+num2}`);
+		console.log(`${num1} + ${num2}`);
+		console.log(`(${num1} + ${num2})`);
+		console.log(`${num1}`+ `${num2}`)
+
+		let num5 = 30;
+
+		// num5=20;
+
+		// var num5 =20;
+		// num5=30;
+
+		// const num5=20;
+		// num5=30;(overwrite lote loh ma ya)
+
+		console.log(num5);
+
+		num5 = 500;
+		console.log(num1+num5);
+		num5 = 100;
+		console.log(num1+num5);
+
+		// concatenate(+)
+		const name1 = "mg mg";
+		const name2 = "kyaw";
+		console.log(name1 + name2);
+
+		console.log(name1+' '+name2+' '+"is my friend");
+
+		let greeting ="Hello";
+		let city1 = "Mandalay";
+		let city2 = "Yangon";
+
+		console.log(greeting +" "+city1+" and " + city2);
+		console.log(`${greeting} ${city1} and ${city2}`);
+		document.write("<br/>");
+		document.write("<hr/>");
+		document.write(`${greeting} ${city1} and ${city2}`);
+
+		let myfather = 'he\'s my father';
+		console.log(myfather);
+
+		document.write("<br/>");
+
+		let x ='It\'s U Ba';
+		let y ="poem";
+		let z ="He\'s my \"Uncle\"."
+
+		// document.write(`${x} ${y} ${z}`);
+
+		// let abc = document.getElementById("poem");
+		// console.log(abc);
+
+		// document.getElementById("poem").textContent = `${x} ${y} ${z}` ; //(sr pyn pyin dk 3 ways)
+		// document.getElementById("poem").innerText = `${x} ${y} ${z}` ;
+		document.getElementById("poem").innerHTML = `${x} ${y} ${z}` ;
+
+
+
+
+	</script>
+
+</body>
+</html>

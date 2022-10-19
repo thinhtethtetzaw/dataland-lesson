@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&family=Yanone+Kaffeesatz&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin:0;
+	overflow: hidden;
+}
+
+.background{
+	background: url(butterfly2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+
+	z-index: -1;
+}
+
+.container{
+	width: 400px;
+	background-color: #fcc5f0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	padding:20px;
+	border-radius: 10px;
+	box-shadow: 3px 5px 10px rgba(0,0,0,0.5);
+}
+
+h2{
+	margin: 0;
+	margin-bottom: 20px;
+
+}
+
+.display{
+	font-family: 'Teko', sans-serif;
+	letter-spacing: 2px;
+	width: 60%;
+	font-size: 30px;		
+	background-color: #c1f5f3;
+	text-align: center;
+	color:#555;
+	padding: 10px 5px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.control{
+	padding: 10px;
+}
+
+.btn{
+	background-color: #c1f5f3;
+	color: #555;
+	font-size: 25px;
+	font-family: 'Teko',sans-serif;
+	border:none;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	cursor: pointer;
+
+}
+i{
+	font-size: 18px;
+}
+.btn:focus{
+	outline: 0;
+}
+
+.btn:active{
+	transform: scale(1.1);
+}

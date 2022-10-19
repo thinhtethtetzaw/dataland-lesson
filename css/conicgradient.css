@@ -1,0 +1,98 @@
+.container .circle1{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		yellow 30%,
+		red 0 50%,
+		green 0 90%,
+		pink 0 100%);
+}
+.container .circle2{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		#4281f5,
+		#9116a1);
+}
+.container .circle3{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		
+		rgba(195,96,127,1.00),
+		rgba(75,218,127,1.00)
+		);
+}
+.containertwo{
+	width: 300px;
+	height: 300px;
+	/*background-color: green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: auto;
+}
+.containertwo .c1{
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	border-radius: 50%;
+	z-index: 2;
+	position: absolute;
+}
+.containertwo .c2{
+	width: 320px;
+	height: 320px;
+	/*background:linear-gradient(
+		90deg,
+		red,
+		blue);
+*/	
+	background:conic-gradient(
+		red 0,
+		green 25%,
+		blue 55%,
+		yellow  100%);
+	border-radius: 50%;
+	position: absolute;
+	top:-10px;
+	left: -10px;
+	z-index: 1;
+}
+p{
+	color:#fff;
+	z-index: 3;
+}
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	display: block;
+	border-radius: 50%;
+}
+.pointer-container{
+	width: 20px;
+	height: 200px;
+	/*background-color: gray;*/
+	z-index: 4;
+	position: absolute;
+	top:-40px;
+	animation-name: myrotate;
+	animation-duration: 7s;
+	transform-origin: bottom;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes myrotate{
+	from{
+		transform: rotate(0deg); 
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}

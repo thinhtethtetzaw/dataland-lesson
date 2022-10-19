@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(../img/header.png);
+
+    margin: 0;
+    overflow: hidden;
+}
+
+.btnopen{
+    position: absolute;
+    top: 100px;
+    right: -50px;
+}
+#btnprimary{
+    width: 100px;
+    height: 100px;
+    background-color: #f78279;
+    border-radius: 100%;
+
+    position: relative;
+    
+}
+#btnprimary i{
+    color:#666;
+    font-size: 20px;
+
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+
+}
+
+.btns img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.btns.close .btn-icon{
+    position: absolute;
+    top: 120px;
+    right: -10px;
+
+    transition: all 0.5s;
+}
+
+.btns.show .btn-icon:nth-of-type(1){
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+.btns.show .btn-icon:nth-of-type(2){
+    border-radius: 50%;
+    border: 1px solid violet;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+.chicken{
+    width: 58px;
+    height: 58px;
+}
+.btns.show .btn-icon:nth-of-type(3){
+    position: absolute;
+    top: 122px;
+    right: 90px;
+}
+.btns.show .btn-icon:nth-of-type(4){
+    position: absolute;
+    top: 180px;
+    right: 60px;
+}
+.btns.show .btn-icon:nth-of-type(5){
+    position: absolute;
+    top: 230px;
+    right: 5px;
+}
+
+/* pics */
+ /* start burger */
+
+.burger{
+    font-family: 'Josefin Sans', sans-serif;
+
+    width: 390px;
+    height: 400px;
+    background-color: #a1ffb0;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+
+    display: none;
+
+    position: absolute;
+    top: 15%;
+    left: 50%;
+
+    transform: translate(-50%);
+}
+.burger.show{
+    display:block;
+}
+.burger h3{
+    color: #345c3b;
+    font-size: 22px;
+}
+.burger p{
+    color: #333;
+    text-align: start;
+    padding:0 20px;
+}
+.burger span{
+    color: #333;
+}
+.burger img{
+    border-radius: 5px;
+    width: 200px;
+    height: 130px;
+
+}
+/*end burger */
+ 

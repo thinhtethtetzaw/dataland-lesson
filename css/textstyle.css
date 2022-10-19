@@ -1,0 +1,17 @@
+.textalign{
+	text-align:center;
+}
+.textdecoration{
+	text-decoration:overline;
+}
+span{
+	text-decoration:line-through;
+}
+.textline{
+	letter-spacing:5px;
+	line-height:10px;
+}
+
+.textshadow{
+	text-shadow:5px 10px 15px red
+}

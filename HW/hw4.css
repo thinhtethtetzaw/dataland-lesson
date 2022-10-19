@@ -1,0 +1,61 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+body{
+	font-family:'Stick', sans-serif;
+}*/
+
+
+table{
+	border:2px;
+	border-style: dotted;
+	border-color: white;
+
+	}
+body{
+	background-image:url(background.jpg);
+	color:white;
+}
+h1{
+	color:white;
+}
+
+.user{
+	text-align: center;
+}
+
+.lorem{
+	text-align:justify;
+
+}
+h1{
+	text-shadow: -7px -5px 3px black;
+}
+fieldset{
+	border-style:dotted;
+}
+.lo{
+	text-shadow: -7px -5px 3px black;
+
+}
+label{
+	text-shadow: -5px -4px 3px black;
+	
+}
+legend{
+	text-align:right;
+	font-family:'Stick', sans-serif; 
+	color: yellow;
+}
+a{
+	color:yellow;
+}
+#button {
+    margin-right: 30px;
+    float:right;
+}
+#input-user, #input-password {
+    float:right;
+    margin-right: 30px;
+    margin-bottom:5px;
+    
+    

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS date time</title>
+</head>
+<body>
+
+	<small>Copyright <span id="year"></span> medida</small>
+
+	<script type="text/javascript">
+		// Date time
+		let date = new Date();
+		// console.log(date);
+		// console.log(typeof date);
+
+		// let hours = new Date().getHours();
+		let hours = date.getHours();
+		console.log(hours);
+
+		let minutes = date.getMinutes();
+		console.log(minutes);
+
+		let seconds = date.getSeconds();
+		console.log(seconds);
+
+		let gettime = date.getTime();
+		console.log(gettime);
+
+		let now =Date.now();
+		console.log(now);
+
+		let getdate = date.getDate();
+		// console.log(getdate);
+
+		// Jan=0 (Array nk pya loh)
+		let month=date.getMonth();
+		console.log(month);
+
+		// (sunday=0)
+		let day=date.getDay();
+		// console.log(day);
+
+		let year=date.getFullYear();
+		// console.log(year);
+
+		let utcyear = date.getUTCFullYear();
+		// console.log(utcyear);
+
+		document.getElementById('year').textContent =year;
+
+		// month day year hour min seconds
+		let bd =new Date('8-10-2013');
+		bd = new Date('8-10-2013');
+		bd = new Date('Aug-10-2013');
+		bd = new Date('8-10-2013 11:35:00');
+		bd = new Date('Aug-10-2013 11:35:00')
+		// console.log(bd);
+
+		bd.setMonth(9);
+		bd.setDate(13);
+		bd.setFullYear(2002);
+		bd.setHours(15);
+		bd.setMinutes(10);
+		bd.setSeconds(5);
+		console.log(bd)
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

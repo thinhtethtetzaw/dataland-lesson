@@ -1,0 +1,172 @@
+<!-- Function
+1.Regular function
+2.arrow function -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Regular Function</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		//Regular Function
+		// function name(){
+		// 	code to be executed
+		// }
+		
+		//name(); //recall or invoke
+
+		//1 Manual Function
+		function greet(){
+			console.log('Hello Mandalay');
+		}
+
+		// greet();
+		// greet();
+
+		function printalert(){
+			window.alert('Hello Myanmar');
+		}
+
+		// printalert();
+
+		function hello(){
+			return "Hello Yangon";
+		}
+
+		// console.log(hello());
+		// window.alert(hello());
+		// document.write(hello());
+
+		// 2. Parameter Function
+			// a.single Parameter function
+			// b.multi Parameter function
+
+			// a.single Parameter function
+			function myfun1(city){
+				console.log("Hello " + city);
+			}
+
+			myfun1("Mandalay");
+			myfun1("Yangon");
+			myfun1("Bago");
+			myfun1();
+
+			function myfun2(city="Yangon"){
+				console.log(`Hello ${city}`);
+
+			}
+			myfun2();
+
+			// b.multi Parameter function
+
+			function multifun1(x,y,z){
+				console.log(`X value is = ${x} and Y value is = ${y} and Z value is = ${z}`);
+			}
+
+			multifun1(10,20,30,40);
+
+
+
+			function multifun2(x,y,z){
+				const result = x+y+z;
+				return result;
+			}
+			
+			console.log(multifun2(10,20,30,40));
+
+
+
+
+			function multifun3(x,y,z=100){
+				const result = x+y+z;
+				return result
+
+			}
+
+			console.log(multifun3(10,20,30));
+
+
+
+			let num1= 0;
+			let num2= 1;
+			let num3= 2;
+
+			function multifun4(a,b,c){
+				console.log(`A value is ${a} , B valueis ${b}, C value is ${c}`);
+			}
+			multifun4(num1,num2,num3);
+
+
+			// 3.Name less function (Anonymous function)
+
+			// let annfun = function(a){
+			// 	document.write('My value is ' + a);
+			// }
+
+			// annfun(500);
+
+
+			// constructor function (By string)
+
+			// let confun = new Function("a","b","return a+b");
+			// console.log(confun(10,20));
+
+
+			// self invoking function
+			// (IIFE) Immediately invoking function expresson
+
+			// method 1
+
+			let slfun1 = function(a){
+				document.write(`I am self invoking function , my value is ${a}`);
+			}(500);
+			document.write("<hr/>");
+
+
+			// method 2
+			(function(a){
+				document.write(`I am self invoking function , my value is ${a}`);
+			})(700);
+
+
+			// Using Function to Function
+			// function funone(){
+			// 	return "Hello World";
+			// }
+
+			// function funtwo(fun){
+			// 	return fun;
+
+			// }
+
+			// console.log(funtwo(funone()));
+
+			// get function name(.name)
+			function funone(){
+				return "Hello Mandalay";
+			}
+
+			function funtwo(abc){
+				console.log(abc.name);
+			}
+
+			funtwo(funone);
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

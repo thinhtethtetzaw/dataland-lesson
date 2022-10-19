@@ -1,0 +1,27 @@
+p{
+	color:red;
+}
+
+h1,h2{
+	color:pink;
+}
+
+#myself{
+	color:violet
+}
+
+#mal{
+	color:yellow;
+}
+
+.mp{
+	color:brown;
+}
+
+.f20{
+	font-size:20px
+}
+
+.divone,.divtwo{
+	color:violet
+}

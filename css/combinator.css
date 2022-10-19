@@ -1,0 +1,58 @@
+/*Tag to Tag*/
+/*div span{
+	color: red;
+}*/
+/*Tag to Tags*/
+/*div span p{
+	color:red;
+}*/
+/*Tag to class*/
+/*div{
+	color:blue;
+}*/
+/*div .address{
+	color:orange;
+}*/
+/*Multi tags with class*/
+/*div span small.name{
+	color:blue;
+}*/
+
+/*.bank .money .currency{
+	color:violet;
+}
+
+.bank b{
+	color:yellow;
+}
+*/
+
+/*div .name .age{
+	color:brown;
+}*/
+/*.container p{
+	color:red;
+}*/
+/*.container b span{
+	color:blue;
+}
+
+.mobile.jpn{
+	color:red;
+}*/
+/*.vehicle .car.jp{
+	color: green;
+}
+.vehicle .car.cn{
+	color:pink;
+}*/
+.div1 b,.div1 p{
+	color:green;
+}
+.div2 > p{
+	color:yellow;
+}
+
+.div4 ~ i{
+	color:blue;
+}

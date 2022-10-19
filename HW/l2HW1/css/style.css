@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family:'Mulish', sans-serif;
+	background:linear-gradient(
+		#ed5a8b,
+		#fac8d9
+		);
+	
+
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin:0;
+	overflow: hidden;
+}
+.navs{
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+/* hidden search  */
+.search{
+	height: 30px;
+
+	position: relative;
+}
+.hiddeninput{
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	font-size: 18px;
+	border:0;
+	padding: 15px;
+
+	transition: all 0.3s ease; 
+
+}
+
+.hiddeninput::placeholder{
+	color:silver;
+}
+
+
+.hiddenbtn{
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	font-size: 20px;
+	border:0;
+	cursor: pointer;
+
+	position: absolute;
+	top:0;
+	left: 0;
+
+	transition: all 0.3s ease; 
+	
+
+}
+.hiddeninput:focus,.hiddenbtn:focus{
+	outline: 0;
+}
+
+.search.active .hiddeninput{
+	width: 200px;
+}
+
+.search.active .hiddenbtn{
+	transform: translate(200px);
+}
+/* end hidden search  */
+.titleh1{
+	font-family: 'Pattaya', sans-serif;
+	font-weight: 300;
+	font-size: 45px;
+	color: #91143f;
+
+	position: absolute;
+	top:100px;
+	left:50%;
+
+	transform: translateX(-50%);
+}
+i{
+	color:#b5003e;
+}
+.txt{
+	font-family: 'Mulish', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #91143f;
+}
+.txts{
+	font-family: 'Pattaya', sans-serif;
+	color: #faa7c4;
+}
+img{
+	border-radius: 50%;
+}
+
+
+.counter-container{
+	display: flex;
+	justify-content: center;
+	/*align-items: center; text-align: center;*/
+	flex-direction: column;
+
+	text-align: center;
+	margin:10px 50px;	/*topbot ka media a twet yayy pyy htrr*/
+
+}
+.counter{
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+@media (max-width: 500px){
+	body{
+		flex-direction: column;
+	}
+	.titleh1{
+		/* font-size: 30px; */
+		/* top:470px; */
+		display: none;
+
+	}
+	.controls,.autotext{
+		display: none;
+	}
+}
+
+/* Start Auto Text */
+.controls{
+	background-color: transparent;
+	padding: 10px 20px;
+	
+	position: absolute;
+	bottom: 20px;
+	
+}
+/* auto text */
+.autotext{
+	
+	position: absolute;
+	bottom: 120px;
+	left: 50%;
+
+	transform:translate(-50%);
+}

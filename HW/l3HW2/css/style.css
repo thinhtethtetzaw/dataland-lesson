@@ -1,0 +1,381 @@
+/* Start Nav */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Mulish', sans-serif;
+	background:linear-gradient(
+        #35578c,
+        #abc4eb
+    );
+	color: #444;
+	height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+   
+
+	margin:0;
+	overflow: hidden;
+
+}
+
+/* Noti  */
+#toasts{
+	position: fixed;
+    top: 10px;
+    right: 20px;
+	/* bottom: 10px;
+	right: 10px; */
+}
+#toast{
+	background-color: #fff;
+	color:#000;
+	border-radius: 10px;
+	padding: 1rem 2rem;
+	margin: 0.5rem;
+
+    position: absolute;
+    top: 10px;
+	right: 20px;
+    
+}
+/*color a twet*/
+
+.toastbtn.success{
+    border-radius: 10px;
+	padding: 1rem 2rem;
+	margin: 0.5rem;
+    background-color:#43f78e;
+	color:#000;
+}
+.toastbtn.danger{
+    border-radius: 10px;
+	padding: 1rem 2rem;
+	margin: 0.5rem;
+    background-color:#f05d6c;
+	color:#000;
+}
+
+.logo{
+	width: 130px;
+    height: 130px;
+    margin-left: 30px;
+
+}
+.bglogo{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top: 10px;
+    left: 50%;
+
+    transform: translate(-70%);
+}
+.text{
+	text-transform: uppercase;
+}
+
+.nav-btn{
+	font-size: 20px;
+	background-color: transparent;
+	border:0;
+	cursor: pointer;
+}
+
+.open-btn{
+	position: absolute;
+	top:10px;
+	left: 10px;
+}
+.nav{
+	position: absolute;
+	top:0;
+	left: 0;
+
+	height: 100vh;
+
+	transform: translateX(-100%);
+	transition: all 0.3s ease-in-out;
+}
+
+.nav.visible{
+	transform: translateX(0);
+}
+.nav-black{
+	width: 60%;
+	max-width: 200px;
+	min-width: 260px;
+	background-color: #abc4eb;
+
+	transition-delay:0.15s;
+}
+
+.nav-black.visible{
+	transition-delay:0s; 
+}
+
+.nav-blue{
+	width: 95%;
+	background-color:#6fa5fc;
+	padding:40px;
+
+	position: relative;
+
+	transition-delay: 0s;
+}
+
+.nav-blue.visible{
+	transition-delay: 0.15s;
+	
+}
+.close-btn{
+	position: absolute;
+	top:20px;
+	right:10px;
+
+}
+
+.list{
+	list-style: none;
+	margin-top:-20px;
+	padding: 0;
+
+}
+
+.list li{
+    width: 200px;
+    margin-left: -20px;
+	list-style-type: none;
+    padding: 10px 40px;
+}
+.list li:hover{
+    background-color: royalblue;
+}
+
+.list li a{
+	color:#000;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.list ul{
+    width: 100%;
+}
+.drops{
+    margin-left: -12px;
+}
+.drops:focus{
+    outline: 0;
+}
+.drops:hover{
+    background-color: royalblue;
+}
+
+/* End Nav */
+
+/* Start Pricing */
+/* toggle  */
+.toggle-container{
+    display: flex;
+
+    position:absolute;
+    top:120px;
+    left: 50%;
+
+    transform: translate(-50%);
+}
+
+/* child ele all ko khw chin yin > use  */
+.toggle-container > *{
+    margin: 0 3px;
+}
+
+.toggle{
+    visibility: hidden;
+}
+.label{
+    width: 40px;
+    height: 20px;
+    background-color: #d0d0d0;
+    border-radius: 50px;
+
+    margin:0 5px;
+    cursor: pointer;
+
+    position: relative;
+}
+.toggle:checked + .label{
+    background-color:dodgerblue;
+}
+.ball{
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 3px;
+    left: 3px;
+
+    animation:offani 0.3s linear forwards;
+}
+.toggle:checked + .label .ball{
+    animation-name: onani;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;  /*ball pyn ma lr buu*/
+}
+
+@keyframes onani{
+    0%{
+        transform: translate(0) scale(1);
+    }
+    50%{
+        transform: translate(10px) scale(1.2);
+    }
+    100%{
+        transform: translate(20px) scale(1);
+    }
+}
+
+@keyframes offani{
+    0%{
+        transform: translate(20px) scale(1);
+    }
+    50%{
+        transform: translate(10px) scale(1.2);
+    }
+    100%{
+        transform: translate(0) scale(1);
+    }
+}
+/* end toggle  */
+.price-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position:absolute;
+    bottom: 20px;
+    left:11%;
+
+    /* margin:auto; */
+}
+
+.price-container .box1{
+    background:linear-gradient(
+        salmon,
+        rgba(0,0,0,0.1)
+    );
+    padding: 1.5rem 0;
+    border-radius:20px 20px 0 0;
+}
+
+.price-container .box2{
+    background:linear-gradient(
+        royalblue,
+        rgba(0,0,0,0.1)
+    );
+    padding: 1.5rem 0;
+    border-radius:20px 20px 0 0;
+}
+
+.price-container .box3{
+    background:linear-gradient(
+        #43f78e,
+        rgba(0,0,0,0.1)
+    );
+    padding: 1.5rem 0;
+    border-radius:20px 20px 0 0;
+}
+.price-box{
+    width:250px;
+    background-color: #d8e8df;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    padding-bottom: 1rem;
+    margin:1rem 1.5rem;
+
+    /* overflow: hidden; */
+}
+.price-box p{
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+.price-box h5 span{
+    font-size: 1.6rem;
+    vertical-align: middle; /*$ lyy ko vertical middle phyit twrr ag pyy*/
+}
+.price-box h5 span:nth-of-type(2){
+    font-size: 2.5rem;
+}
+
+.price-list ul{
+    background-color:#d8e8df;
+
+    list-style: none;
+    padding: 0;
+}
+
+.price-list ul li{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+}
+.price-list ul li:last-child{
+    border-bottom: 1px solid #eee;
+
+}
+
+.price-list a{
+    text-decoration: none;
+    /* background-color: tomato; */
+    color:#fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+.price-list a:hover{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.btn1{
+    background:salmon;
+}
+.btn2{
+    background-color: royalblue;
+}
+.btn3{
+    background:#43f78e;
+}
+
+.price-box:nth-of-type(2){
+    transform: scale(1.15);
+}
+
+@media(max-width: 800px){
+    .price-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .price-box:nth-of-type(2){
+        transform: scale(1);
+    }
+}
+/* End Pricing  */
+

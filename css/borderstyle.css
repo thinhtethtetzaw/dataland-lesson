@@ -1,0 +1,73 @@
+
+.borderstyle1{
+	border-style: solid;
+}
+.borderstyle2{
+	border-style: dotted;
+}
+.borderstyle3{
+	border-style: double;
+}
+.borderstyle4{
+	border-style: dashed;
+}
+.borderstyle5{
+	rder-style: inset;
+}
+.borderstyle6{
+	border-style: outset;
+}
+.bddesign{
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+
+	/*all angle*/
+;
+	/*border-radius: 20px;*/
+
+
+	/*top&bottom left&right*/
+	/*border-radius: 10px 50px;*/
+
+	/*top left/top right/bottom right/bottom left*/
+	/*border-radius: 10px 20px 30px 40px*/
+
+	border-top-left-radius: 30px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 80px;
+	border-bottom-left-radius: 100px;
+}
+
+li{
+	/*list-style-type: circle;*/
+	/*list-style-type: none; (br bullet mha ma shi toz buu)*/
+	/*list-style: square; circle; or none;*/
+	/*list-style-type: decimal;*/
+	list-style-type: decimal-leading-zero;
+	/*border:1px solid red; or*/
+	border:1px;
+	border-style: solid;
+	list-style-position: inside;
+	border-color: violet;
+
+	/*list-style-position: outside;*/
+
+}
+input[type="text"]{
+	color:blue;
+	background-color: pink;
+	width: 300px;
+	border-radius: 30px;
+}
+
+body{
+	background-image: url(../img/icon/icon1.png);
+	background-repeat: no-repeat;
+/*	background-position: center;
+	background-position:right;
+	background-position:left;
+	background-position:top;*/
+	background-position:bottom;
+	background-position:right bottom;
+}

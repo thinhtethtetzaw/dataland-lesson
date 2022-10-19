@@ -1,0 +1,30 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0;
+	overflow: hidden;
+}
+
+.container{
+	width: 300px;
+	border:2px dotted #000;
+	text-align:center;
+}
+
+.form-group{
+	text-align: right;
+	padding-right: 30px;
+}
+.btn-group{
+	text-align: right;
+	padding-right: 30px;
+	
+}
